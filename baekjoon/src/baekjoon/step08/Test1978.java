@@ -14,8 +14,9 @@ public class Test1978 {
 		//출력 : 주어진 수들 중 소수의 개수를 출력한다.
 		//소수 : 1과 자기 자신만을 약수로 갖는 자연수를 의미한다.
 		
+		Scanner sc = new Scanner(System.in);
 		
-		boolean is_Prime(int Number) {
+		boolean Prime(int Number) {
 			
 			if(Number == 1) { // 1은 소수가 아님
 				return false;
@@ -26,13 +27,15 @@ public class Test1978 {
 			// Number = 2의 경우는 자연스럽게 for문을 검사하지 않게 됨
 			for(int i =2; i<Number; i++) {
 				
-				if(Number%i==0)
+				if(Number%i==0) {
 					return false;
-			}
+				}
 			
 			return true;
-	}
+			}
+		}
 }
+
 
 		
 
